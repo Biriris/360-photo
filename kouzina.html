@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>360 Panorama</title>
-    <script type="text/javascript" src="https://pannellum.org/js/pannellum.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://pannellum.org/css/pannellum.css">
+    <title>360 Photo Viewer</title>
+    <link rel="stylesheet" href="https://pannellum.org/css/pannellum.css">
 </head>
 <body>
+    <div id="panorama" style="width: 100%; height: 500px;"></div>
 
-<!-- Container for the panorama -->
-<div id="panorama" style="width: 100%; height: 500px;"></div>
-
-<script>
-    pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "https://drive.google.com/uc?export=view&id=1-9oyR8kuPwe1WN4vZfK4ufvq65t43RmT",
-        "autoLoad": true
-    });
-</script>
-
+    <script src="https://pannellum.org/js/pannellum.js"></script>
+    <script>
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "https://drive.google.com/uc?export=view&id=1-9oyR8kuPwe1WN4vZfK4ufvq65t43RmT", <!-- Αντικατάστησε το ID με το σωστό -->
+            "autoLoad": true
+        });
+    </script>
 </body>
 </html>
